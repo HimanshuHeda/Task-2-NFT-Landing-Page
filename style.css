@@ -456,3 +456,128 @@ body {
     width: 98vw;
   }
 }
+
+/* --- Trending This Week Section Styles --- */
+.trending-section {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 60px 0 40px 0;
+  background: radial-gradient(circle at 40% 90%, #7b2ff2 0%, #2c2c2c 80%);
+}
+.trending-header {
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  padding: 0 24px;
+}
+.trending-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.trending-desc {
+  font-size: 1.1rem;
+  color: #bdbdbd;
+  margin-bottom: 0;
+}
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.trending-card {
+  background: rgba(44,44,44,0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 #7b2ff2a0;
+  padding: 24px 24px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.trending-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2px;
+}
+.trending-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+.trending-card-eth {
+  font-size: 1rem;
+  color: #f316b0;
+  font-weight: 600;
+}
+.trending-card-sub {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+.trending-card-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0;
+  box-shadow: 0 2px 16px 0 #7b2ff2a0;
+}
+.trending-explore-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 32px auto 0 auto;
+  padding: 0 24px;
+}
+.trending-explore-btn {
+  background: #fff;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 36px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 24px 0 #7b2ff2a0;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.trending-explore-btn:hover {
+  background: linear-gradient(90deg, #f316b0 0%, #7b2ff2 100%);
+  color: #fff;
+}
+@media (max-width: 1100px) {
+  .trending-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .trending-header {
+    max-width: 98vw;
+  }
+  .trending-explore-btn-row {
+    max-width: 98vw;
+  }
+}
+@media (max-width: 700px) {
+  .trending-title {
+    font-size: 2rem;
+  }
+  .trending-card-img {
+    height: 180px;
+  }
+  .trending-card {
+    padding: 12px 8px 10px 8px;
+  }
+  .trending-header {
+    padding: 0 8px;
+  }
+  .trending-explore-btn-row {
+    padding: 0 8px;
+  }
+}
