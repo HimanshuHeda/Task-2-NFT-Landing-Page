@@ -1,3 +1,102 @@
+/* --- Footer Section Styles --- */
+.footer-section {
+  width: 100vw;
+  background: radial-gradient(circle at 80% 40%, #a259f7 0%, #2c2c2c 80%);
+  padding: 0;
+  margin-top: 0;
+}
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 32px 0 32px;
+}
+.footer-brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.footer-nav {
+  display: flex;
+  gap: 48px;
+}
+.footer-nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-nav a:hover {
+  color: #f316b0;
+}
+.footer-social {
+  display: flex;
+  gap: 24px;
+}
+.footer-social-icon {
+  background: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 16px 0 #7b2ff2a0;
+  transition: background 0.2s;
+}
+.footer-social-icon img {
+  width: 22px;
+  height: 22px;
+}
+.footer-social-icon:hover {
+  background: linear-gradient(90deg, #f316b0 0%, #7b2ff2 100%);
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  max-width: 1200px;
+  margin: 24px auto 0 auto;
+  padding: 0 32px 32px 32px;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.85;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 32px 16px 0 16px;
+  }
+  .footer-bottom {
+    padding: 0 16px 24px 16px;
+  }
+  .footer-nav {
+    gap: 24px;
+  }
+  .footer-social {
+    gap: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-main {
+    padding: 24px 8px 0 8px;
+  }
+  .footer-bottom {
+    padding: 0 8px 16px 8px;
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+  .footer-brand {
+    font-size: 1.3rem;
+  }
+}
 /* --- Bitcoin Art Work Auction Section Styles --- */
 .artwork-auction-section {
   width: 100vw;
